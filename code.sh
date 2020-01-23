@@ -7,6 +7,9 @@ samtools view -hbo ERR174341_local.bam ERR174341_local.sam
 samtools sort ERR174341_local.bam -o ERR174341_local.sorted.bam
 samtools index -b ERR174341_local.sorted.bam
 
+##BWA alignment ##
+bwa mem BWA_idx/GRCh38.p13.genome.fa ERR174341_1.fastq ERR174341_2.fastq > ERR174341_bwa.sam 
+
 #GRIDSS
 bash gridss.sh ERR174341.sorted.bam -j gridss-2.7.3-gridss-jar-with-dependencies.jar --output ERR174341.vcf -r BWA_idx/GRCh38.p13.genome.fa -a assembly/
 #Error cannot allocate memory
