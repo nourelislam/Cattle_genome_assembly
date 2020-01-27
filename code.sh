@@ -17,3 +17,4 @@ bash gridss.sh ERR174341.sorted.bam -j gridss-2.7.3-gridss-jar-with-dependencies
 ##Manta
 ~/anaconda3/envs/ngs/share/manta-1.6.0-0/bin/configManta.py --bam ERR174341_local.sorted.bam --referenceFasta BWA_idx/GRCh38.p13.genome.fa --runDir data/
 #Error Reference genome mismatch: Normal BAM/CRAM file is missing a chromosome found in the reference fasta file: 'ML143366.1'
+~/Documents/NGS/local_data/runWorkflow.py
